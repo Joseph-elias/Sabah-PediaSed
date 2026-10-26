@@ -1,0 +1,100 @@
+{
+  "model_name": "Random Forest",
+  "selection_metric": "mean stratified cross-validation macro F1",
+  "selection_score": 0.8958693789377495,
+  "selection_score_std": 0.03165076210781557,
+  "cross_validation_folds": 5,
+  "random_state": 42,
+  "training_samples": 416,
+  "feature_names": [
+    "Age_1_3",
+    "Age_4_6",
+    "Age_7_9",
+    "Age_10_12",
+    "ASA_ordinal",
+    "Behavior_Agitated",
+    "Behavior_Anxious",
+    "Behavior_Uncooperative",
+    "Special_Needs",
+    "Previous_Failed_Attempts",
+    "Max_ICDAS",
+    "Num_Teeth_Max_ICDAS",
+    "Previous_GA",
+    "Infection"
+  ],
+  "feature_importance_method": "cross-validated permutation importance using macro F1",
+  "top_features": [
+    {
+      "rank": 1,
+      "feature": "Previous_Failed_Attempts",
+      "importance_mean": 0.13413658672897819,
+      "importance_std": 0.038644793983400615
+    },
+    {
+      "rank": 2,
+      "feature": "Behavior_Anxious",
+      "importance_mean": 0.1340972801375274,
+      "importance_std": 0.0358347010155855
+    },
+    {
+      "rank": 3,
+      "feature": "Behavior_Uncooperative",
+      "importance_mean": 0.10822125354540485,
+      "importance_std": 0.03838586307100101
+    },
+    {
+      "rank": 4,
+      "feature": "Max_ICDAS",
+      "importance_mean": 0.0963352436258257,
+      "importance_std": 0.030451699237571468
+    },
+    {
+      "rank": 5,
+      "feature": "Behavior_Agitated",
+      "importance_mean": 0.06975705869205175,
+      "importance_std": 0.022226123253127655
+    },
+    {
+      "rank": 6,
+      "feature": "Age_1_3",
+      "importance_mean": 0.02342741947669899,
+      "importance_std": 0.023593143624051773
+    },
+    {
+      "rank": 7,
+      "feature": "Num_Teeth_Max_ICDAS",
+      "importance_mean": 0.014743296567651741,
+      "importance_std": 0.01643350475975259
+    },
+    {
+      "rank": 8,
+      "feature": "Infection",
+      "importance_mean": 0.008367514990610177,
+      "importance_std": 0.013063674137801448
+    },
+    {
+      "rank": 9,
+      "feature": "Special_Needs",
+      "importance_mean": 0.004443970283901379,
+      "importance_std": 0.015235151273249615
+    },
+    {
+      "rank": 10,
+      "feature": "ASA_ordinal",
+      "importance_mean": 0.0027835286902382693,
+      "importance_std": 0.014763270699188915
+    }
+  ],
+  "classes": [
+    "GA",
+    "Local",
+    "Nitrous"
+  ],
+  "class_counts": {
+    "GA": 155,
+    "Nitrous": 147,
+    "Local": 114
+  },
+  "dataset": "final_dataset.xlsx",
+  "scikit_learn_version": "1.7.2"
+}

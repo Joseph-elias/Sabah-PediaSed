@@ -1,0 +1,73 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter temporary state
+.ipynb_checkpoints/
+.jupyter/
+
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.toml
+.streamlit/secrets.toml
+
+# IDE and editor state
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Microsoft Office temporary/lock files
+~$*.xlsx
+~$*.xls
+~$*.docx
+~$*.pptx
+
+# Python packaging and build output
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Streamlit/runtime caches and logs
+.streamlit/cache/
+*.log
+logs/
+
+# Local temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Docker/local override files
+docker-compose.override.yml
+
+# Keep the small production model artifacts and validation reports under
+# model_results/ tracked: app.py requires the .joblib model and metadata JSON.

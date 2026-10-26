@@ -1,0 +1,7 @@
+# Streamlit Community Cloud - application-only dependencies
+# The bundled model was trained and saved with scikit-learn 1.7.2.
+streamlit>=1.45,<2
+scikit-learn==1.7.2
+pandas>=2.0,<3
+numpy>=1.24,<3
+joblib>=1.3,<2
